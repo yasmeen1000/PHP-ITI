@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Information Form</title>
+</head>
+<body>
+
+<h2>User Information Form</h2>
+
+<form action="db.php" method="post">
+    <label for="First Name">First Name:</label>
+    <input type="text" id="firstName" name="firstName" required><br>
+
+    <label for="Last Name">Last Name:</label>
+    <input type="text" id="lastName" name="lastName" required><br>
+
+    <label for="address">Address:</label>
+    <textarea id="address" name="address" rows="4" cols="50" required></textarea><br>
+
+    <label for="country">Country:</label>
+    <select id="country" name="country">
+        <option value="Egypt">Egypt</option>
+        <option value="Canada">Canada</option>
+        <option value="Moroco">Moroco</option>
+    </select><br>
+
+    <label>Gender:</label>
+    <label for="male">Male</label>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="female">Female</label>
+    <input type="radio" id="female" name="gender" value="female"><br>
+
+    <label >Skills:</label>
+    <label for="html">HTML</label>
+    <input type="checkbox" id="html" name="skills[]" value="html">
+    <label for="css">CSS</label>
+    <input type="checkbox" id="css" name="skills[]" value="css">
+    <label for="js">JavaScript</label>
+    <input type="checkbox" id="js" name="skills[]" value="js">
+    <label for="python">Python</label>
+    <input type="checkbox" id="python" name="skills[]" value="python"><br>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required><br>
+
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required><br>
+
+    <label for="department">Department:</label>
+    <input type="text" id="department" name="department" value="Open Source" disabled><br>
+
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+</form>
+
+</body>
+</html>
+
